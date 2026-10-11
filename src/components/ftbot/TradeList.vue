@@ -110,7 +110,7 @@ async function forceExitHandler(item: Trade, ordertype: string | undefined = und
     botStore
       .forceSellMulti(payload)
       .then((xxx) => console.log(xxx))
-      .catch((error) => console.log(error.response));
+      .catch((error) => console.error(error));
   }
 }
 
@@ -127,7 +127,7 @@ async function removeTradeHandler(item: Trade) {
       tradeid: String(item.trade_id),
       botId: item.botId,
     };
-    botStore.deleteTradeMulti(payload).catch((error) => console.log(error.response));
+    botStore.deleteTradeMulti(payload).catch((error) => console.error(error));
   }
 }
 
@@ -151,7 +151,7 @@ async function cancelOpenOrderHandler(item: Trade) {
       tradeid: String(item.trade_id),
       botId: item.botId,
     };
-    botStore.cancelOpenOrderMulti(payload).catch((error) => console.log(error.response));
+    botStore.cancelOpenOrderMulti(payload).catch((error) => console.error(error));
   }
 }
 
@@ -174,7 +174,7 @@ const onRowClicked = (item: Trade) => {
   if (item && item.trade_id !== botStore.activeBot.detailTradeId) {
     botStore.activeBot.setDetailTrade(item);
     if (props.multiBotView) {
-      router.push({ name: 'Freqtrade Trading' });
+      router.push('/trade');
     }
   } else {
     botStore.activeBot.setDetailTrade(null);
