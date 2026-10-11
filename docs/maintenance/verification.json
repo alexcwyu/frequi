@@ -1,0 +1,345 @@
+{
+  "repository": "frequi",
+  "source_commit_before_documentation_commit": "f6d8b38d91e453475044f9a927e22cc1df8ca82f",
+  "recorded_on": "2026-10-12",
+  "records": [
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "--project",
+        "msedge",
+        "--workers",
+        "2",
+        "--reporter",
+        "line"
+      ],
+      "exit_code": 1,
+      "seconds": 3.26,
+      "cwd": "<workspace>/frequi",
+      "check": "browser-edge",
+      "original_log": "frequi-browser-edge.log",
+      "log_sha256": "0bf3d7d3dc5d348d1d20b539cfdbf496a703f4f63f958f882d8f2eb2f903a0e5",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "--project=msedge"
+      ],
+      "exit_code": 1,
+      "seconds": 25.0,
+      "cwd": "<workspace>/frequi",
+      "check": "browser-edge-local",
+      "original_log": "frequi-browser-edge-local.log",
+      "log_sha256": "3c47ea26ac4128eb5931a3e3269dfcf3fa4836948088ff4eff9875337ed811d5",
+      "outcomes": [
+        "  20 passed (23.0s)"
+      ]
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "--project",
+        "firefox",
+        "--project",
+        "webkit",
+        "--workers",
+        "2",
+        "--reporter",
+        "line"
+      ],
+      "exit_code": 1,
+      "seconds": 93.22,
+      "cwd": "<workspace>/frequi",
+      "check": "browser-firefox-webkit",
+      "original_log": "frequi-browser-firefox-webkit.log",
+      "log_sha256": "7cb01e489c3214e1bb581d05637a1a2a41f5ed10370b97058a316df013424bdf",
+      "outcomes": [
+        "  39 passed (1.5m)"
+      ]
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "--project",
+        "firefox",
+        "--project",
+        "webkit",
+        "--workers",
+        "2",
+        "--reporter",
+        "line"
+      ],
+      "exit_code": 1,
+      "seconds": 53.26,
+      "cwd": "<workspace>/frequi",
+      "check": "browser-firefox-webkit-baselines",
+      "original_log": "frequi-browser-firefox-webkit-baselines.log",
+      "log_sha256": "0ce7a62ccc56e923e9ac86991057ad92618f737e7e45b56bb5bfdc4430107c44",
+      "outcomes": [
+        "  41 passed (51.6s)"
+      ]
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "--workers",
+        "2",
+        "--reporter",
+        "line"
+      ],
+      "exit_code": 0,
+      "seconds": 107.79,
+      "cwd": "<workspace>/frequi",
+      "check": "browser-four-platforms",
+      "original_log": "frequi-browser-four-platforms.log",
+      "log_sha256": "5278697551076d00d9ec8e42426c1cd4dc2227563f8130f1677de9dc456cf925",
+      "outcomes": [
+        "  84 passed (1.8m)"
+      ]
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "--project",
+        "chromium",
+        "--project",
+        "firefox",
+        "--project",
+        "webkit",
+        "--workers",
+        "2",
+        "--reporter",
+        "line"
+      ],
+      "exit_code": 0,
+      "seconds": 63.33,
+      "cwd": "<workspace>/frequi",
+      "check": "browser-three-platforms",
+      "original_log": "frequi-browser-three-platforms.log",
+      "log_sha256": "b4ee910da8723ae30181f5bcdebdde456e11c65aab75ba3ccef7dca9dd706d21",
+      "outcomes": [
+        "  63 passed (1.0m)"
+      ]
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "--project",
+        "chromium",
+        "--workers",
+        "2",
+        "--reporter",
+        "line"
+      ],
+      "exit_code": 1,
+      "seconds": 54.29,
+      "cwd": "<workspace>/frequi",
+      "check": "e2e-chromium",
+      "original_log": "frequi-e2e-chromium.log",
+      "log_sha256": "ea9865baba554aa158e2bf1dd9bfcb56a7123df39f0bd68fbd0b8f5b77e2c373",
+      "outcomes": [
+        "  20 passed (49.2s)"
+      ]
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "--project",
+        "chromium",
+        "--workers",
+        "2",
+        "--reporter",
+        "line"
+      ],
+      "exit_code": 0,
+      "seconds": 41.34,
+      "cwd": "<workspace>/frequi",
+      "check": "e2e-chromium-baselines",
+      "original_log": "frequi-e2e-chromium-baselines.log",
+      "log_sha256": "edb987f73b6299862d18eb87ea561e497331667b5628e52588077f9ac4705309",
+      "outcomes": [
+        "  21 passed (36.5s)"
+      ]
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 5.22,
+      "cwd": "<workspace>/frequi",
+      "check": "final-production-build",
+      "original_log": "frequi-final-production-build.log",
+      "log_sha256": "ebda007cbae137a51b9b882b4c0b0cb6316ee68a13cdfd981856ccbece04e719",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "run",
+        "test:unit",
+        "--run"
+      ],
+      "exit_code": 0,
+      "seconds": 3.39,
+      "cwd": "<workspace>/frequi",
+      "check": "final-unit-tests",
+      "original_log": "frequi-final-unit-tests.log",
+      "log_sha256": "15e7c360c765db349b28454db148f3830292de0016f9ceb8386f553c867bf670",
+      "outcomes": [
+        " Test Files  12 passed (12)",
+        "      Tests  56 passed (56)"
+      ]
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "test",
+        "e2e/analysis.spec.ts",
+        "--project",
+        "firefox",
+        "--grep",
+        "Lookahead analysis test",
+        "--workers",
+        "1",
+        "--reporter",
+        "line"
+      ],
+      "exit_code": 1,
+      "seconds": 16.69,
+      "cwd": "<workspace>/frequi",
+      "check": "firefox-analysis-diagnosis",
+      "original_log": "frequi-firefox-analysis-diagnosis.log",
+      "log_sha256": "8d75c9d30ffde643310d3d18bac2682e776ac455cc3eaf9a1c0c0dc356d41f5b",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "run",
+        "lint-ci"
+      ],
+      "exit_code": 0,
+      "seconds": 12.24,
+      "cwd": "<workspace>/frequi",
+      "check": "lint-final",
+      "original_log": "frequi-lint-final.log",
+      "log_sha256": "c72765bb25256b8a128ca811f9b842d80670a3c6b5d962c5d41fc7628496d3fd",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "install",
+        "msedge"
+      ],
+      "exit_code": 1,
+      "seconds": 1.66,
+      "cwd": "<workspace>/frequi",
+      "check": "playwright-edge-install",
+      "original_log": "frequi-playwright-edge-install.log",
+      "log_sha256": "83e972cabcdc57bf073fb4a9751616ae5b7b02a737a1f1daaebd9a88f3d99910",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "exec",
+        "playwright",
+        "install",
+        "firefox",
+        "webkit"
+      ],
+      "exit_code": 0,
+      "seconds": 25.91,
+      "cwd": "<workspace>/frequi",
+      "check": "playwright-extra-browsers",
+      "original_log": "frequi-playwright-extra-browsers.log",
+      "log_sha256": "a4f72e20b0749182ed0c093c073b2773b21c40fcb2e607763e855ed5d1a24899",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "npx",
+        "--yes",
+        "pnpm@12.8.2",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "seconds": 18.35,
+      "cwd": "<workspace>/frequi",
+      "check": "typecheck",
+      "original_log": "frequi-typecheck.log",
+      "log_sha256": "f6201b7b3c0166a39b327dd5342fb1f1788255fd7e31e8538fd8ab5f4ebb39a8",
+      "outcomes": []
+    }
+  ],
+  "summary": {
+    "repo": "frequi",
+    "branch": "feature/ayu_develop",
+    "status": "Build, typecheck, lint and complete existing unit/browser suites passed.",
+    "runtime": "Node with pnpm12.8.2",
+    "tests": "56 Vitest tests and 84 Playwright cases across Chrome, Edge, Firefox and WebKit passed. Missing Darwin chart baselines for existing cases were visually inspected; no new cases were added.",
+    "notes": "Deliberate mocked login failures and browser/server teardown produce console warnings; a passing browser suite does not imply warning-free development-server output."
+  },
+  "note": "Full raw logs are retained in the workspace maintenance evidence, not distributed here. Hashes identify those original logs. A successful build or selected test subset does not imply a full test-suite pass. Commands containing <workspace> describe the original execution environment."
+}

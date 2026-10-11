@@ -38,7 +38,14 @@ export default defineConfig({
     },
     {
       name: 'msedge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' }, // or "msedge-beta" or 'msedge-dev'
+      use: {
+        ...devices['Desktop Edge'],
+        channel: 'msedge',
+        // A user-local official browser can run the suite without a system installer.
+        launchOptions: process.env.PLAYWRIGHT_EDGE_EXECUTABLE_PATH
+          ? { executablePath: process.env.PLAYWRIGHT_EDGE_EXECUTABLE_PATH }
+          : undefined,
+      }, // or "msedge-beta" or 'msedge-dev'
     },
     {
       name: 'firefox',
@@ -60,15 +67,6 @@ export default defineConfig({
     //   use: { ...devices['iPhone 12'] },
     // },
 
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
   ],
 
   /* Run your local dev server before starting the tests */

@@ -72,6 +72,8 @@ test.describe('Analysis', () => {
     // Delays by a second due to background task timing
     await expect(page.getByText('Analysis Result', { exact: true })).toBeInViewport();
     await expect(page.getByText('No lookahead bias detected')).toBeInViewport();
+    // Firefox's native date inputs make the result row fall below the initial viewport.
+    await page.getByRole('cell', { name: 'AverageStrategy' }).scrollIntoViewIfNeeded();
     await expect(page.getByRole('cell', { name: 'AverageStrategy' })).toBeInViewport();
     await expect(page.getByText('No lookahead bias detected')).toBeInViewport();
   });
