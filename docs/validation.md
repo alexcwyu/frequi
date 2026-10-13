@@ -1,5 +1,11 @@
 # frequi: validation results
 
+<!-- current-documentation-provenance -->
+Documentation reviewed: 2026-10-13 / Git source base: `8e4b2a6f710e9eb6a58616729f491c50200fbf08` / [Current architecture and feature guide](ayu-develop.md).
+Historical execution commands/results below retain their original dates and scope; this metadata update is not a new application test run.
+<!-- /current-documentation-provenance -->
+
+
 Build, typecheck, lint and complete existing unit/browser suites passed.
 
 ## Verified scope
